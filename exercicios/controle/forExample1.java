@@ -1,6 +1,6 @@
 package exercicios.controle;
 
-public class forexample1 {
+public class forExample1 {
     public static void main(String[] args) {
 
         for (int contador = 5; contador <= 15; contador++) {
