@@ -1,6 +1,6 @@
 package exercicios.lambda;
 
-public class CalculoTeste {
+public class CalculoTeste1 {
     public static void main(String[] args) {
 
         Calculo calculo = new Somar();
