@@ -3,6 +3,7 @@ package exercicios.excecao;
 public class Aluno {	public final String nome;
     public final double mediaFinal;
     public final boolean temDisciplina;
+    public int nota;
 
     public Aluno(String nome, double mediaFinal) {
         this(nome, mediaFinal, true);
