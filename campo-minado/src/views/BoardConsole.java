@@ -1,6 +1,10 @@
 package views;
 
-public class BoardConsole {
+import models.Board;
 
-    private Tabuleiro tabuleiro;
+public class BoardConsole {
+    public static void main(String[] args) {
+        Board board = new Board(6,6,3);
+        new BoardConsole();
+    }
 }

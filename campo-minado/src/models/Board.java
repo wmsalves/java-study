@@ -19,7 +19,9 @@ public class Board {
         this.columns = columns;
         this.mines = mines;
 
-
+        fieldGenerate();
+        associateNeighbors();
+        randomMines();
     }
 
     public void open(int line, int column){
