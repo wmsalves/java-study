@@ -23,15 +23,15 @@ public class ItemPedido {
     private Pedido pedido;
 
     @ManyToOne
-
     private Produto produto;
+
     public ItemPedido() {
     }
 
     public ItemPedido(Produto produto, int quantidade, BigDecimal precoUnitario, Pedido pedido) {
         this.produto = produto;
         this.quantidade = quantidade;
-        this.precoUnitario = precoUnitario;
+        this.precoUnitario = produto.getPreco();
         this.pedido = pedido;
     }
 
