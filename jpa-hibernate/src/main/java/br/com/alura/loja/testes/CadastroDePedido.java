@@ -1,6 +1,7 @@
 package br.com.alura.loja.testes;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 import javax.persistence.EntityManager;
 
@@ -38,6 +39,14 @@ public class CadastroDePedido {
 
         BigDecimal totalVendido = pedidoDao.valorTotalVendido();
         System.out.println("Valor total vendido: " + totalVendido);
+
+        List<Object[]> relatorioDeVendas = pedidoDao.relatorioDeVendas();
+        for (Object[] item : relatorioDeVendas) {
+            System.out.println("Nome do produto: " + item[0]);
+            System.out.println("Quantidade vendida: " + item[1]);
+            System.out.println("Data da última venda: " + item[2]);
+            System.out.println("-------------------------");
+        }
     }
 
     private static void popularBancoDeDados() {
