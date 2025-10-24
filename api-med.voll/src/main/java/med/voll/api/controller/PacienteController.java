@@ -10,7 +10,8 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
-import med.voll.api.paciente.*;
+
+import med.voll.api.domain.paciente.*;
 
 @RestController
 @RequestMapping("pacientes")
