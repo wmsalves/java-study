@@ -15,7 +15,8 @@ import med.voll.api.endereco.Endereco;
 @Table(name = "pacientes")
 public class Paciente {
 
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String nome;
@@ -49,6 +50,10 @@ public class Paciente {
     }
 
     public void inativar() {
+        this.ativo = false;
+    }
+
+    public void excluir() {
         this.ativo = false;
     }
 }
